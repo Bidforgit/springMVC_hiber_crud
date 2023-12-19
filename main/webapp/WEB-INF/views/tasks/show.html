@@ -48,10 +48,10 @@
   </nav>
 
   <div class="alert alert-primary" role="alert">
-   Car Model:<p th:text = "${car.getModel()}"></p>
-    <a th:href="@{/cars/{id}/edit(id=${car.getId()})}" class="btn btn-success">Edit car</a>
+   Task name:<p th:text = "${task.getName()}"></p>
+    <a th:href="@{/tasks/{id}/edit(id=${task.getId()})}" class="btn btn-success">Edit task</a>
   </div>
-  <form th:method="DELETE" th:action="@{/cars/{id} (id=${car.getId()})}">
+  <form th:method="DELETE" th:action="@{/tasks/{id} (id=${task.getId()})}">
     <input type="submit" value="Delete" class="btn btn-danger"/>
   </form>
 
